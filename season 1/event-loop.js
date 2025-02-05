@@ -16,8 +16,13 @@ crypto.pbkdf2("password", "salt", 50000, 50, "sha512", () => {
 crypto.pbkdf2("password", "salt", 50000, 50, "sha512", () => {
     console.log("4th Password hashed");
 });
+// order of execution can be different boz which one completed first will come back in call stack first 
 
+crypto.pbkdf2("password", "salt", 50000, 50, "sha512", () => {
+    console.log("5th Password hashed");
+});
 
+//---------------------------------------------------------------------------------------------//
 // consept of thread pool and LibUv 
 // there are by default 4 threads in Uv THREAD pool
 // is JS a multithread or single threaded language?
