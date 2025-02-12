@@ -51,3 +51,7 @@ LibUV is a cross-platform asynchronous I/O library that plays a crucial role in 
 #### Thread Pool: For computationally intensive tasks that cannot be completed immediately, LibUV uses a thread pool to handle them in the background, passing results back to the event loop once finished 2.
 
 #### Cross-Platform Abstraction: LibUV provides consistent APIs for asynchronous I/O operations across different operating systems, enabling Node.js's cross-platform functionality 2.
+
+###### redis is used in cashing (in memory db)
+
+##
